@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+} 
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #16301F;
+    height: 100%;
+    width: 100%;
+    background-image: url(/version_2/images/pattern.avif);
+    background-blend-mode: multiply;
+}
+
+header h4 {
+    color: #C9A24B;
+    font-family: monospace;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    translate: -50%;
+}
+
+header h4::before {
+    content: "";
+    background-color: #C9A24B;
+    height: 0.5px;
+    width: 7.5rem;
+    position: absolute;
+    left: 4rem;
+    top: 50%;
+    z-index: -3;
+}
+
+header h4::after {
+    content: "";
+    background-color: #C9A24B;
+    height: 0.5px;
+    width: 7.5rem;
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    z-index: -3; 
+}
+
+header h4 span {
+    background-color: #16301F;
+    padding: 0 0.6rem 0 0.6rem;
+}
+
+header h1 {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    translate: -50%;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+ 
+/* main */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-block-start: 13rem;   
+}
+
+/*card1*/
+.card1_content {
+    transition: transform 0.8s cubic-bezier(0.1, 0.62, 0.265, 1);
+    transform-style: preserve-3d;
+    position: relative;
+    background-color: #F1EFE4;
+    border-radius: 0.3rem;
+}
+
+.card1_content .front, .card1_content .back {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;                 
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: 0.04rem solid #C9A24B;
+    height: 22.75rem;
+    width: 16.17rem;
+}
+
+.card1_content .front img{
+    height: 19rem;
+    width: 16rem;
+    border-radius: 0.3rem;
+    border-bottom: 0.4rem dotted #16301F;
+    transform: translateZ(2rem);
+    border-bottom: 0.75rem dotted #16301F;
+}
+
+.card1_content .front h4 {
+    transform: translateZ(5rem);
+    color: #c49227;
+    font-size: 1.5rem;
+}
+
+.card1_content .back .body1, .card1_content .back .body2 {
+    color: white;
+    padding: 3rem 1.3rem 0.5rem 1.3rem;
+    font-family: monospace;
+}
+
+.card1_content .back .body1::before {
+    content: "";
+    height: 0.5px;
+    width: 16rem;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+}
+
+.card1_content .back {
+    transform: rotateY(0.5turn);
+    position: absolute;
+    top: 0;
+    background-color: #0E2216;
+}
+
+.card1_content .back .title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    color: #c19026;
+}
+
+.card1_content .back .body2 {
+    padding-top: 0;
+}
+
+.card1:hover .card1_content {
+    transform: rotateY(0.5turn);
+}
+
+/*card2*/
+.card2_content {
+    transition: transform 0.8s cubic-bezier(0.1, 0.62, 0.265, 1);
+    transform-style: preserve-3d;
+    position: relative;
+    background-color: #F1EFE4;
+    border-radius: 0.3rem;
+}
+
+.card2_content .front, .card2_content .back {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;                 
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: 0.04rem solid #C9A24B;
+    height: 22.75rem;
+    width: 16.17rem;
+}
+
+.card2_content .front img{
+    height: 19rem;
+    width: 16rem;
+    border-radius: 0.3rem;
+    border-bottom: 0.4rem dotted #16301F;
+    transform: translateZ(2rem);
+    border-bottom: 0.75rem dotted #16301F;
+}
+
+.card2_content .front h4 {
+    transform: translateZ(5rem);
+    color: #c49227;
+    font-size: 1.5rem;
+}
+
+.card2_content .back .body1, .card2_content .back .body2 {
+    color: white;
+    padding: 3rem 1.3rem 0.5rem 1.3rem;
+    font-family: monospace;
+}
+
+.card2_content .back .body1::before {
+    content: "";
+    height: 0.5px;
+    width: 16rem;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+}
+
+.card2_content .back {
+    transform: rotateY(0.5turn);
+    position: absolute;
+    top: 0;
+    background-color: #0E2216;
+}
+
+.card2_content .back .title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    color: #c19026;
+}
+
+.card2_content .back .body2 {
+    padding-top: 0;
+}
+
+.card2:hover .card2_content {
+    transform: rotateY(0.5turn);
+}
+
+
+/*card3*/
+.card3_content {
+    transition: transform 0.8s cubic-bezier(0.1, 0.62, 0.265, 1);
+    transform-style: preserve-3d;
+    position: relative;
+    background-color: #F1EFE4;
+    border-radius: 0.3rem;
+}
+
+.card3_content .front, .card3_content .back {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;                 
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: 0.04rem solid #C9A24B;
+    height: 22.75rem;
+    width: 16.17rem;
+}
+
+.card3_content .front img{
+    height: 19rem;
+    width: 16rem;
+    border-radius: 0.3rem;
+    border-bottom: 0.4rem dotted #16301F;
+    transform: translateZ(2rem);
+    border-bottom: 0.75rem dotted #16301F;
+}
+
+.card3_content .front h4 {
+    transform: translateZ(5rem);
+    color: #c49227;
+    font-size: 1.5rem;
+}
+
+.card3_content .back .body1, .card3_content .back .body2 {
+    color: white;
+    padding: 3rem 1.3rem 0.5rem 1.3rem;
+    font-family: monospace;
+}
+
+.card3_content .back .body1::before {
+    content: "";
+    height: 0.5px;
+    width: 16rem;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+}
+
+.card3_content .back {
+    transform: rotateY(0.5turn);
+    position: absolute;
+    top: 0;
+    background-color: #0E2216;
+}
+
+.card3_content .back .title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    color: #c19026;
+}
+
+.card3_content .back .body2 {
+    padding-top: 0;
+}
+
+.card3:hover .card3_content {
+    transform: rotateY(0.5turn);
+}
+
+
+/*card4*/
+.card4_content {
+    transition: transform 0.8s cubic-bezier(0.1, 0.62, 0.265, 1);
+    transform-style: preserve-3d;
+    position: relative;
+    background-color: #F1EFE4;
+    border-radius: 0.3rem;
+}
+
+.card4_content .front, .card4_content .back {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;                 
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: 0.04rem solid #C9A24B;
+    height: 22.75rem;
+    width: 16.17rem;
+}
+
+.card4_content .front img{
+    height: 19rem;
+    width: 16rem;
+    border-radius: 0.3rem;
+    border-bottom: 0.4rem dotted #16301F;
+    transform: translateZ(2rem);
+    border-bottom: 0.75rem dotted #16301F;
+}
+
+.card4_content .front h4 {
+    transform: translateZ(5rem);
+    color: #c49227;
+    font-size: 1.5rem;
+}
+
+.card4_content .back .body1, .card4_content .back .body2 {
+    color: white;
+    padding: 3rem 1.3rem 0.5rem 1.3rem;
+    font-family: monospace;
+}
+
+.card4_content .back .body1::before {
+    content: "";
+    height: 0.5px;
+    width: 16rem;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+}
+
+.card4_content .back {
+    transform: rotateY(0.5turn);
+    position: absolute;
+    top: 0;
+    background-color: #0E2216;
+}
+
+.card4_content .back .title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    color: #c19026;
+}
+
+.card4_content .back .body2 {
+    padding-top: 0;
+}
+
+.card4:hover .card4_content {
+    transform: rotateY(0.5turn);
+}
