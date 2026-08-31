@@ -13,7 +13,7 @@ body {
     background-color: #16301F;
     height: 100%;
     width: 100%;
-    background-image: url(pattern.avif);
+    background-image: url(pattern_better.png);
     background-blend-mode: multiply;
 
 }
